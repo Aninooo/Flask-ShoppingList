@@ -1,0 +1,24 @@
+body {
+ background-image: url("grocery_aisle.jpg");
+ background-color: #cccccc;
+}
+
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td {
+  text-align: center;
+  vertical-align: bottom;
+}
+

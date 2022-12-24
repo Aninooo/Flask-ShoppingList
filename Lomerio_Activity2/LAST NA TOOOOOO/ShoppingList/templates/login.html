@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body style="background-color:grey;">
+<div class="jumbotron d-flex align-items-center">
+    <div class="container text-center">
+        <div class="p-3 mb-2 bg-info text-white">Please enter Username and Password</div>
+        <br>
+        <form action="" method="post">
+            <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+            <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+            <br>
+            <br>
+            <input class="btn btn-primary btn-lg" type="submit" value="Login">
+        </form>
+        {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+            {% endif %}
+    </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
